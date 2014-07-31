@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Guimi
+    http://guimi.net
+
+-->
+<resources>
+
+    <!-- APLICACION -->
+    <string name="app_name">BTControl</string>
+    <string name="web_url">http://guimi.net</string>
+    <string name="app_web">BTControl\nhttp://guimi.net</string>
+    <string name="salto">\n</string>
+    <string name="cerrar">Close</string>
+    
+    <!-- INICIO -->
+    <string name="elije_funcion">Select control</string>
+    <string name="primo">Primo</string>
+    <string name="mando">Remote</string>
+    <string name="cargando_control">Loading control&#8230;</string>
+
+    <!-- MENÚS -->
+    <string name="main_menu_configuracion">Settings</string>
+    <string name="main_menu_ayuda">Help</string>
+    <string name="main_menu_info">About&#8230;</string>
+    <string name="preferencias_menu_Reset">Reset default values</string>
+    
+    <!-- BLUETOOTH -->
+    <string name="error_no_BT">The device doesn\'t have Blueetooth</string>
+    <string name="bt_no_activado">Blueetooth NOT available</string>
+    <string name="sin_conexion">NO CONECTION</string>
+    <string name="utilice_menu">Use the menu to select a device.</string>
+    <string name="conectando_a">Conecting to </string>
+    <string name="error_envio">ERROR WHILE SENDING THE MESSAGE.\nSee the help.</string>
+
+    <!-- PRIMO -->
+    <string name="seleccion_pieza">Select a piece</string>
+    <string name="enviando_mensaje">Sending message to the robot&#8230;</string>
+    <string name="toque_para_continuar">Touch the screen to continue.</string>
+
+    <!-- PREFERENCIAS -->
+    <string name="pref_Gestor_Conexiones_title">Connection management</string>
+    <string name="pref_Senales_title">Signals</string>
+    
+    <string name="pref_Conexiones_title">Connections</string>
+    <string name="pref_Conexiones_summary">Connect with other devices</string>
+    <string name="pref_AutoConectar_title">Auto-Connect</string>
+    <string name="pref_AutoConectar_summary">Auto-connect to the last connected device</string>
+    
+    <string name="senal_N1_title">Top-left</string>
+    <string name="senal_N1_summary">Control wheel top-left (Remote)</string>
+    <string name="senal_N2_title">Top</string>
+    <string name="senal_N2_summary">Control wheel top (Remote)</string>
+    <string name="senal_N3_title">Top-right</string>
+    <string name="senal_N3_summary">Control wheel top-right (Remote)</string>
+    <string name="senal_N4_title">Left</string>
+    <string name="senal_N4_summary">Control wheel left (Remote)</string>
+    <string name="senal_N5_title">Stop</string>
+    <string name="senal_N5_summary">Control wheel center (Remote)</string>
+    <string name="senal_N6_title">Right</string>
+    <string name="senal_N6_summary">Control wheel right (Remote)</string>
+    <string name="senal_N7_title">Down-left</string>
+    <string name="senal_N7_summary">Control wheel down-left (Remote)</string>
+    <string name="senal_N8_title">Down</string>
+    <string name="senal_N8_summary">Control wheel down (Remote)</string>
+    <string name="senal_N9_title">Down-right</string>
+    <string name="senal_N9_summary">Control wheel down-right (Remote)</string>
+
+    <string name="senal_FA_title">Button A</string>
+    <string name="senal_FA_summary">Button A (Remote)</string>
+    <string name="senal_FB_title">Button B</string>
+    <string name="senal_FB_summary">Button B (Remote)</string>
+    <string name="senal_FC_title">Button C</string>
+    <string name="senal_FC_summary">Button C (Remote)</string>
+    <string name="senal_FD_title">Button D</string>
+    <string name="senal_FD_summary">Button D (Remote)</string>
+    <string name="senal_FE_title">Button E</string>
+    <string name="senal_FE_summary">Button E (Remote)</string>
+    <string name="senal_FF_title">Button F</string>
+    <string name="senal_FF_summary">Button F (Remote)</string>
+    <string name="senal_FG_title">Button G</string>
+    <string name="senal_FG_summary">Button G (Remote)</string>
+    <string name="senal_FH_title">Button H</string>
+    <string name="senal_FH_summary">Button H (Remote)</string>
+    <string name="senal_FI_title">Button I</string>
+    <string name="senal_FI_summary">Button I (Remote)</string>
+    <string name="senal_FJ_title">Button J</string>
+    <string name="senal_FJ_summary">Button J (Remote)</string>
+    
+    <string name="senal_recto_title">Primo - Forward</string>
+    <string name="senal_recto_summary">Straight red piece</string>
+    <string name="senal_izquierda_title">Primo - Left</string>
+    <string name="senal_izquierda_summary">Blue turn piece</string>
+    <string name="senal_derecha_title">Primo - Right</string>
+    <string name="senal_derecha_summary">Yellow turn piece</string>
+    <string name="senal_stop_title">Primo - Stop (Remote)</string>
+    <string name="senal_stop_summary">Octagonal green piece</string>
+    <string name="senal_atras_title">Primo - Backward (Remote)</string>
+    <string name="senal_atras_summary">Straight red piece upside down</string>
+    
+    <string name="senal_N0_title">End Primo message</string>
+    <string name="senal_N0_summary">Code added at the end of the Primo message</string>
+    
+</resources>

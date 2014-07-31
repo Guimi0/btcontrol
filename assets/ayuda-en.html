@@ -1,0 +1,135 @@
+<a name="menu"><h1>BTCONTROL</h1></a>
+[<a href="file:///android_asset/ayuda.html">SPANISH VERSION</a>]<br/>
+<table border="0">
+<tr><td><img src="file:///android_asset/logo.png"></td>
+<td>
+<ul><li><a href="#intro">INTRODUCTION</a>
+<li><a href="#primo">BTControl - PRIMO</a>
+<li><a href="#mando">BTControl - REMOTE</a>
+<li><a href="#conexion">CONECTING ROBOT</a>
+<li><a href="#problemas">TROUBLESHOOTING</a>
+<li><a href="#desarrolladores">DEVELOPERS</a>
+    <ul><li><a href="#template">ARDUINO TEMPLATE CODE</a></ul>
+<li><a href="#creditos">ABOUT</a>
+</ul>
+</td></tr></table>
+
+For comments and help, visit <a href="http://guimi.net/blogs/hiparco/btcontrol/">BTControl homepage</a>
+
+<hr width="50%">
+<a name="intro"><h2>INTRODUCTION</h2></a>
+<b>BTControl</b> allows you to send pre-defined signals to a connected device via Bluetooth. <br/>
+Its main use is to control robots made with Arduino and the like.<br/>
+<br/>
+It has two control modes, the Primo mode and Remote mode.<br/>
+<br/> 
+<a href="www.primo.io">Primo</a> is an Arduino-based game whose goal is to guide a small robot by creating instruction sequences using colourful instruction blocks.<br/> 
+The original game consists of two parts: the robot and the interface. <br/> 
+<b>BTControl - Primo</b> allows to replace the wood interface.<br/> 
+<br/>
+<b>BTControl - Remote</b> is designed to be used as a remote control similar to the radio-controlled vehicles.<br/>
+Also includes 10 function buttons (A to J), and 5 Primo-like buttons.<br/> 
+<br/>
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="primo"><h2>BTControl - PRIMO</h2></a>
+<img src="file:///android_asset/primo.png">
+<h3>HOW DOES THE PRIMO INTERFACE WORK</h3> 
+In sequence, colored blocks indicating forward, turn left or right get are arranged.<br/>
+Pressing the red button, the generated message is sent to the robot, which starts to follow the program.<br/>
+There is also a block (round, green) that allows you to run the four blocks of the green rectangle (Routine).<br/>
+<br/>
+<h3>MEANING OF BLOCKS</h3>
+<ul><li>Red [straight arrow]: Forward
+<li>Yellow [spin]: Turn right
+<li>Blue [spin]: Turn Left 
+<li>Green [Routine]: Executes the four blocks of the green rectangle
+<li>Gray [position]: Meaning no block (ignored)</ul>
+<br/>
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="mando"><h2>BTControl - REMOTE</h2></a>
+<img src="file:///android_asset/mando.png">
+<h3>HOW DOES THE REMOTE INTERFACE WORK</h3>
+The remote has a control wheel on the right side to control a robot in a similar way to the radio-controlled vehicles. <br/>
+While a direction is pressed, the robot continues to advance, until control is returned to the center, indicating the robot to stop. <br/>
+It has 5 Primo-like buttons. These buttons cause the robot to perform discrete movements, with a set time for each. <br/>
+It also includes 10 function buttons (A to J) that can allow, depending on the robot, to control lights, sound and any other function of the robot.<br/>
+<br/>
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="conexion"><h2>CONECTING ROBOT</h2></a>
+BTControl allows to control Bluetooth-paired robots.<br/>
+The "Conections" option from the Settings, launches the Bluetooth settings of your device, allowing pair devices. <br/>
+Paired devices appear in the BTControl menu, to select easily which one to use.<br/>
+<br/>
+You can also check the "Auto-Connect" option, so the app will try to connect automatically with the last device connected.<br/>
+<br/>
+If the app connects automatically with a device and you want to connect to another device, un-check the "Auto-Connect" option.<br/>
+<br/>
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="problemas"><h2>TROUBLESHOOTING</h2></a>
+<h3>The device I want to use is not listed on the menu</h3>
+Use the Bluetooth settings to pair the device. If still does not appear try to restart the program.<br/>
+<br/>
+<h3>The device does not connect properly</h3>
+<h3>Errors occur when sending signals</h3>
+Try:<br/>
+<ol><li>From the Bluetooth settings, delete the device (un-pair it)
+<li>Reboot both devices
+<li>Re-pair the device</ol>
+<br/>
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="desarrolladores"><h2>DEVELOPERS</h2></a>
+The robot must have a working Bluetooth module (<a href="http://guimi.net/blogs/hiparco/category/arduino/">examples on my website</a>).<br/>
+BTControl sends out single-character signals that the robot must interpret.<br/>
+Signals sent can be changed in the "Settings", but if not modified are:<br/>
+<ul><li>Primo* Signals:<ul>
+		<li>Forward (Red): V
+		<li>Left (Blue): W
+		<li>Right (Yellow): Y</ul>
+	<li>Primo-like Signals (from the remote):<ul>
+		<li>Stop (Green): X 
+		<li>Backward (Red): Z</ul>
+	<li>Control wheel Signals:<ul>
+		<li>Numbers 1 to 9, being 1 front-left, front 2, ..., stop 5, ..., 9 back-right</ul>
+	<li>Function buttons:<ul>
+		<li>A to J buttons send the corresponding character</ul>
+</ul>
+<br/>
+[*] At Primo mode, pressing the red button (run), BTControl composes the programmed message and adds '0' at the end of the message.<br/>
+<br/>
+You can reset default values, on the settings, press the menu button on your device and select "Reset default values".<br/>
+<br/>
+<a name="template"><h3>Arduino Template code</h3></a>
+<a href="http://guimi.net/imgs/blog/hiparco/btcontrol/BTControl.ino">Download code</a></br>
+
+
+<a href="#menu">Go to index</a>
+
+<hr width="50%">
+<a name="creditos"><h2>ABOUT</h2></a>
+<a href="http://guimi.net"><img src="file:///android_asset/guimi.png"></a><br/>
+BTControl by <a href="http://guimi.net">Güimi</a><br/>
+&nbsp;<br/>
+Background image (<a href="http://www.publicdomainpictures.net/view-image.php?image=26031&picture=light-wood-texture">light_wood_texture</a>) by Petr Kratochvil.<br/>
+&nbsp;<br/>
+<a href="www.primo.io">Primo</a> by <a href="http://solidlabs.co/">Solid Labs</a><br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+<a href="#menu">Go to index</a>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+

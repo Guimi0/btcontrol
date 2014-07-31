@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Copyright (c) 2014 Guimi
+	http://guimi.net
+
+-->
+<!-- Indicamos el tipo de distribución
+	Asignamos un identificador (para poder referirnos a él en el código)
+	Indicamos que utilice todo el ancho y alto disponible
+	Asignamos una imagen para el fondo.
+-->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/splashLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center"
+    >
+
+	<TextView android:id="@+id/main_titulo"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:gravity="center_horizontal"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:text="@string/app_name"/>
+
+	<TextView android:id="@+id/splash_linea_blanco_01"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="12sp"
+		android:text="@string/salto"/>
+
+	<ImageView   
+	    android:contentDescription="@string/salto"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/logo"/>
+		
+	<TextView android:id="@+id/splash_linea_blanco_02"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="12sp"
+		android:text="@string/salto"/>
+
+	<ImageView
+	    android:contentDescription="@string/salto"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:src="@drawable/guimi"/>
+	<TextView android:id="@+id/splash_web"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textStyle="bold"
+		android:textSize="17sp"
+		android:text="@string/web_url"
+		android:gravity="center_horizontal" />
+</LinearLayout>
+	

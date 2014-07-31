@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Guimi
+    http://guimi.net
+
+-->
+<!-- Indicamos el tipo de distribución
+    Asignamos un identificador (para poder referirnos a él en el código)
+    Indicamos que utilice todo el ancho y alto disponible
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <WebView android:id="@+id/mWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+</LinearLayout>

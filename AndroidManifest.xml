@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Guimi
+    http://guimi.net
+
+-->
+
+<!-- Iniciamos el manifiesto indicando que es una aplicación de android
+    el nombre del paquete (al que deben pertenecer los .java)
+    y la versión del código (código y nombre).
+    versionCode es el dato que toma en cuenta para actualizar una aplicación.
+        Si versionCode de la aplicación a instalar es mayor que versionCode
+        de la aplicacion instalada (y es la misma aplicación, con la misma firma...)
+        ofrece actualizar.
+    versionName es el nombre oficial de la versión.
+ -->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.guimi.btcontrol"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <!-- Version minima y objetivo de la API que necesita la app-->
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+	<!-- Necesitamos permisos para usar Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- Indicamos características generales de la aplicación
+        - label: nombre de la aplicación en el sistema
+        - name: nombre de la clase java con datos globales de la aplicación
+        -+ No confundir label (nombre de la aplicación, requerido), con name (clase opcional para datos)
+        - icon: icono de la aplicación en el sistema
+        - logo
+        - tema
+        - permitimos backup
+        -->    
+    <application
+        android:label="@string/app_name"
+        android:name="DatosGlobales"
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/logo"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        >
+        
+        <!-- Cada actividad indica el archivo .java (name)
+            Si no indicamos la orientación, ésta podrá variar, por ejemplo con el movimiento del dispositivo
+            si se usa auto-rotate. Podemos indicamos una orientación o comportamiento según sensor:
+            (http://developer.android.com/guide/topics/manifest/activity-element.html#screen)
+            ATENCIÓN: Cada vez que se rota la pantalla se re-genera la actividad (onCreate)
+        -->
+        <!-- Nuestra actividad inicial, que será un menú de opciones -->
+        <activity
+            android:name="net.guimi.btcontrol.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Nuestra actividad "SplashActivity", que dura unos segundos al lanzarse la aplicación.
+               Esta actividad es lanzada desde la actividad inicial de menú -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>        
+
+        <!-- Nuestra actividad para el control Primo -->
+        <activity
+            android:name=".PrimoActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>        
+        
+        <!-- Nuestra actividad para el control Mando -->
+        <activity
+            android:name=".MandoActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>        
+        
+        <!-- Nuestra actividad para mostrar páginas web (Ayudas y Acerca de...) -->
+        <activity
+            android:name=".WebActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>        
+        
+        <!-- Nuestra actividad para mostrar las preferencias -->
+        <activity
+            android:name=".PreferenciasActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>        
+        
+    </application>
+
+</manifest>

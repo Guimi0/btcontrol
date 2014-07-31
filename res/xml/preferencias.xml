@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Luis Miguel Armendáriz
+    http://guimi.net
+
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="@string/pref_Gestor_Conexiones_title">
+        <Preference android:key="Conexiones"
+            android:title="@string/pref_Conexiones_title"
+            android:summary="@string/pref_Conexiones_summary"
+            >
+            <intent android:action="android.settings.BLUETOOTH_SETTINGS" /> 
+        </Preference>
+        <CheckBoxPreference
+            android:key="Auto_Conectar"
+            android:title="@string/pref_AutoConectar_title"
+            android:summary="@string/pref_AutoConectar_summary"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="@string/pref_Senales_title">
+        <EditTextPreference
+            android:key="N1"
+            android:title="@string/senal_N1_title"
+            android:summary="@string/senal_N1_summary"
+            android:defaultValue="1"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N2"
+            android:title="@string/senal_N2_title"
+            android:summary="@string/senal_N2_summary"
+            android:defaultValue="2"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N3"
+            android:title="@string/senal_N3_title"
+            android:summary="@string/senal_N3_summary"
+            android:defaultValue="3"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N4"
+            android:title="@string/senal_N4_title"
+            android:summary="@string/senal_N4_summary"
+            android:defaultValue="4"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N5"
+            android:title="@string/senal_N5_title"
+            android:summary="@string/senal_N5_summary"
+            android:defaultValue="5"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N6"
+            android:title="@string/senal_N6_title"
+            android:summary="@string/senal_N6_summary"
+            android:defaultValue="6"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N7"
+            android:title="@string/senal_N7_title"
+            android:summary="@string/senal_N7_summary"
+            android:defaultValue="7"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N8"
+            android:title="@string/senal_N8_title"
+            android:summary="@string/senal_N8_summary"
+            android:defaultValue="8"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="N9"
+            android:title="@string/senal_N9_title"
+            android:summary="@string/senal_N9_summary"
+            android:defaultValue="9"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+
+
+        
+        <EditTextPreference
+            android:key="FA"
+            android:title="@string/senal_FA_title"
+            android:summary="@string/senal_FA_summary"
+            android:defaultValue="A"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FB"
+            android:title="@string/senal_FB_title"
+            android:summary="@string/senal_FB_summary"
+            android:defaultValue="B"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FC"
+            android:title="@string/senal_FC_title"
+            android:summary="@string/senal_FC_summary"
+            android:defaultValue="C"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FD"
+            android:title="@string/senal_FD_title"
+            android:summary="@string/senal_FD_summary"
+            android:defaultValue="D"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FE"
+            android:title="@string/senal_FE_title"
+            android:summary="@string/senal_FE_summary"
+            android:defaultValue="E"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FF"
+            android:title="@string/senal_FF_title"
+            android:summary="@string/senal_FF_summary"
+            android:defaultValue="F"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FG"
+            android:title="@string/senal_FG_title"
+            android:summary="@string/senal_FG_summary"
+            android:defaultValue="G"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FH"
+            android:title="@string/senal_FH_title"
+            android:summary="@string/senal_FH_summary"
+            android:defaultValue="H"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FI"
+            android:title="@string/senal_FI_title"
+            android:summary="@string/senal_FI_summary"
+            android:defaultValue="I"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="FJ"
+            android:title="@string/senal_FJ_title"
+            android:summary="@string/senal_FJ_summary"
+            android:defaultValue="J"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        
+        
+        <EditTextPreference
+            android:key="PA"
+            android:title="@string/senal_recto_title"
+            android:summary="@string/senal_recto_summary"
+            android:defaultValue="V"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="PI"
+            android:title="@string/senal_izquierda_title"
+            android:summary="@string/senal_izquierda_summary"
+            android:defaultValue="W"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="PD"
+            android:title="@string/senal_derecha_title"
+            android:summary="@string/senal_derecha_summary"
+            android:defaultValue="Y"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="PB"
+            android:title="@string/senal_atras_title"
+            android:summary="@string/senal_atras_summary"
+            android:defaultValue="Z"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        <EditTextPreference
+            android:key="PS"
+            android:title="@string/senal_stop_title"
+            android:summary="@string/senal_stop_summary"
+            android:defaultValue="X"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+
+        <EditTextPreference
+            android:key="N0"
+            android:title="@string/senal_N0_title"
+            android:summary="@string/senal_N0_summary"
+            android:defaultValue="0"
+            android:maxLength="1"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 0123456789#@;:-_.,*+!$%/()=?"
+            />
+        
+        </PreferenceCategory>
+</PreferenceScreen>

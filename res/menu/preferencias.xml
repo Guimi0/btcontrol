@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Guimi
+    http://guimi.net
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/preferencias_menu_Reset"
+        android:orderInCategory="40"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_configuracion_g"
+        android:title="@string/preferencias_menu_Reset"/>
+    
+</menu>

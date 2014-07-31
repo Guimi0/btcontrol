@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="agua">#00FFFF</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="azul">#0000FF</color>
+    <color name="azul_osc">#000080</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="fucsia">#FF00FF</color>
+    <color name="gris">#808080</color>
+    <color name="gris_osc">#444444</color>
+    <color name="gris_cla">#cccccc</color>
+    <color name="lima">#00FF00</color>
+    <color name="marron">#c87137</color>
+    <color name="marron_cla">#deaa87</color>
+    <color name="negro">#000000</color>
+    <color name="oliva">#808000</color>
+    <color name="plata">#C0C0C0</color>
+    <color name="purpura">#800080</color>
+    <color name="rojo">#FF0000</color>
+    <color name="rojo_osc">#800000</color>
+    <color name="turquesa">#008080</color>
+    <color name="verde">#008000</color>
+    <color name="verde_cla">#00cc00</color>
+</resources>

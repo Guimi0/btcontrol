@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ViewConstructor">
+        <ignore path="src/net/guimi/btcontrol/MandoView.java" />
+        <ignore path="src/net/guimi/btcontrol/PrimoView.java" />
+    </issue>
+</lint>

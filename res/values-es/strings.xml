@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2014 Guimi
+    http://guimi.net
+
+-->
+<resources>
+
+    <!-- APLICACION -->
+    <string name="app_name">BTControl</string>
+    <string name="web_url">http://guimi.net</string>
+    <string name="app_web">BTControl\nhttp://guimi.net</string>
+    <string name="salto">\n</string>
+    <string name="cerrar">Cerrar</string>
+    
+    <!-- INICIO -->
+    <string name="elije_funcion">Seleccione control</string>
+    <string name="primo">Primo</string>
+    <string name="mando">Mando</string>
+    <string name="cargando_control">Cargando control&#8230;</string>
+    
+    <!-- MENÚS -->
+    <string name="main_menu_configuracion">Configuración</string>
+    <string name="main_menu_ayuda">Ayuda</string>
+    <string name="main_menu_info">Acerca de&#8230;</string>
+    <string name="preferencias_menu_Reset">Carga preferencias originales</string>
+
+    <!-- BLUETOOTH -->
+    <string name="error_no_BT">El dispositivo no dispone de Blueetooth</string>
+    <string name="bt_no_activado">Blueetooth NO activado</string>
+    <string name="sin_conexion">SIN CONEXIÓN</string>
+    <string name="utilice_menu">Utilice el menu para seleccionar un dispositivo.</string>
+    <string name="conectando_a">Conectando a </string>
+    <string name="error_envio">ERROR AL REALIZAR EL ENVÍO.\nConsulte la ayuda.</string>
+
+    <!-- PRIMO -->
+    <string name="seleccion_pieza">Seleccione una pieza</string>
+    <string name="enviando_mensaje">Enviando mensaje al robot&#8230;</string>
+    <string name="toque_para_continuar">Toque la pantalla para continuar.</string>
+
+    <!-- PREFERENCIAS -->
+    <string name="pref_Gestor_Conexiones_title">Gestor de conexiones</string>
+    <string name="pref_Senales_title">Señales</string>
+    
+    <string name="pref_Conexiones_title">Conexiones</string>
+    <string name="pref_Conexiones_summary">Establece conexiones con otros dispositivos</string>
+    <string name="pref_AutoConectar_title">Auto-Conectar</string>
+    <string name="pref_AutoConectar_summary">Conectar automáticamente al último dispositivo conectado</string>
+    
+    <string name="senal_N1_title">Arriba-izquierda</string>
+    <string name="senal_N1_summary">Rueda control arriba-izquierda (Mando)</string>
+    <string name="senal_N2_title">Arriba</string>
+    <string name="senal_N2_summary">Rueda control arriba (Mando)</string>
+    <string name="senal_N3_title">Arriba-derecha</string>
+    <string name="senal_N3_summary">Rueda control arriba-derecha (Mando)</string>
+    <string name="senal_N4_title">Izquierda</string>
+    <string name="senal_N4_summary">Rueda control izquierda (Mando)</string>
+    <string name="senal_N5_title">Parar</string>
+    <string name="senal_N5_summary">Rueda control centro (Mando)</string>
+    <string name="senal_N6_title">Derecha</string>
+    <string name="senal_N6_summary">Rueda control derecha (Mando)</string>
+    <string name="senal_N7_title">Abajo-izquierda</string>
+    <string name="senal_N7_summary">Rueda control abajo-izquierda (Mando)</string>
+    <string name="senal_N8_title">Abajo</string>
+    <string name="senal_N8_summary">Rueda control abajo (Mando)</string>
+    <string name="senal_N9_title">Abajo-derecha</string>
+    <string name="senal_N9_summary">Rueda control abajo-derecha (Mando)</string>
+
+    <string name="senal_FA_title">Botón A</string>
+    <string name="senal_FA_summary">Botón A (Mando)</string>
+    <string name="senal_FB_title">Botón B</string>
+    <string name="senal_FB_summary">Botón B (Mando)</string>
+    <string name="senal_FC_title">Botón C</string>
+    <string name="senal_FC_summary">Botón C (Mando)</string>
+    <string name="senal_FD_title">Botón D</string>
+    <string name="senal_FD_summary">Botón D (Mando)</string>
+    <string name="senal_FE_title">Botón E</string>
+    <string name="senal_FE_summary">Botón E (Mando)</string>
+    <string name="senal_FF_title">Botón F</string>
+    <string name="senal_FF_summary">Botón F (Mando)</string>
+    <string name="senal_FG_title">Botón G</string>
+    <string name="senal_FG_summary">Botón G (Mando)</string>
+    <string name="senal_FH_title">Botón H</string>
+    <string name="senal_FH_summary">Botón H (Mando)</string>
+    <string name="senal_FI_title">Botón I</string>
+    <string name="senal_FI_summary">Botón I (Mando)</string>
+    <string name="senal_FJ_title">Botón J</string>
+    <string name="senal_FJ_summary">Botón J (Mando)</string>
+    
+    <string name="senal_recto_title">Primo - Recto</string>
+    <string name="senal_recto_summary">Pieza recta roja</string>
+    <string name="senal_izquierda_title">Primo - Izquierda</string>
+    <string name="senal_izquierda_summary">Pieza azul giro</string>
+    <string name="senal_derecha_title">Primo - Derecha</string>
+    <string name="senal_derecha_summary">Pieza amarilla giro</string>
+    <string name="senal_stop_title">Primo - Stop (Mando)</string>
+    <string name="senal_stop_summary">Pieza octogonal verde</string>
+    <string name="senal_atras_title">Primo - Atrás (Mando)</string>
+    <string name="senal_atras_summary">Pieza recta roja boca-abajo</string>
+    
+    <string name="senal_N0_title">Final mensaje Primo</string>
+    <string name="senal_N0_summary">Codigo que se añade al final del mensaje de Primo</string>
+    
+</resources>

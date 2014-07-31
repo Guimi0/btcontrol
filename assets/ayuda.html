@@ -1,0 +1,134 @@
+<a name="menu"><h1>BTCONTROL</h1></a>
+[<a href="file:///android_asset/ayuda-en.html">ENGLISH VERSION</a>]<br/>
+<table border="0">
+<tr><td><img src="file:///android_asset/logo.png"></td>
+<td>
+<ul><li><a href="#intro">INTRODUCCIÓN</a>
+<li><a href="#primo">BTControl - PRIMO</a>
+<li><a href="#mando">BTControl - MANDO</a>
+<li><a href="#conexion">CONECTAR ROBOT</a>
+<li><a href="#problemas">SOLUCIÓN DE PROBLEMAS</a>
+<li><a href="#desarrolladores">DESARROLLADORES</a>
+    <ul><li><a href="#template">PLANTILLA DE CÓDIGO ARDUINO</a></ul>
+<li><a href="#creditos">CRÉDITOS</a>
+</ul>
+</td></tr></table>
+
+Para comentarios y ayuda, visita la <a href="http://guimi.net/blogs/hiparco/btcontrol-es/">página de BTControl</a>
+
+<hr width="50%">
+<a name="intro"><h2>INTRODUCCIÓN</h2></a>
+<b>BTControl</b> permite enviar señales pre-definidas a un dispositivo conectado mediante Bluetooth.<br/>
+Su uso principal es para controlar robots realizados con <a href="http://arduino.cc/">Arduino</a> y similares.<br/>
+<br/>
+Tiene dos sistemas de control, el modo <b>Primo</b> y el modo <b>Mando</b>.<br/>
+<br/> 
+<a href="www.primo.io">Primo</a> es un juego basado en Arduino cuyo objetivo es guiar a un pequeño robot mediante la creación de secuencias de instrucciones utilizando bloques de instrucción de colores.<br/>
+<br/>
+El juego original se compone de dos partes: el robot y el programador.<br/>
+<b>BTControl - Primo</b>, permite sustituir el programador de madera.<br/>
+<br/>
+<b>BTControl - Mando</b> está concebido para ser usado como control a distancia de forma similar a los vehículos de radio-control.<br/>
+Además incluye 10 botones de funciones (De A a J) y 5 botones de Primo.<br/>
+<br/>
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="primo"><h2>BTControl - PRIMO</h2></a>
+<img src="file:///android_asset/primo.png">
+<h3>CÓMO FUNCIONA EL PROGRAMADOR DE PRIMO</h3>
+En secuencia, se ponen bloques de colores que indican adelante, gira a la izquierda o a la derecha.<br/>
+Al presionar el botón rojo se envía al robot el mensaje generado, que comienza a seguir las instrucciones.<br/>
+Además existe un bloque (verde redondo) que permite ejecutar los cuatro bloques del rectángulo verde (Rutina).<br/>
+<br/>
+<h3>SIGNIFICADO DE LOS BLOQUES</h3>
+<ul><li>Rojo [flecha recta]: Avanzar
+<li>Amarillo [giro]: Girar a la derecha
+<li>Azul [giro]: Girar a la izquierda
+<li>Verde [Rutina]: Ejecuta los cuatro bloques del rectángulo verde
+<li>Gris [posición]: Indica que no hay ningún bloque (se ignora)</ul>
+<br/>
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="mando"><h2>BTControl - MANDO</h2></a>
+<img src="file:///android_asset/mando.png">
+<h3>CÓMO FUNCIONA EL MANDO DE CONTROL</h3>
+El mando tiene una rueda de control en el lado derecho que permite controlar un robot de forma similar a los vehículos de radio-control.<br/>
+Mientras se indica una dirección el robot continua avanzando, hasta que se devuelve el control al centro, indicándose al robot que pare.<br/>
+También incluye 5 botones similares a los controles de Primo. Estos botones causan que el robot realice movimientos discretos, con un tiempo establecido para cada uno.<br/>
+Además incluye 10 botones de funciones (De A a J) que, según el robot, pueden permitir controlar luces, sonido y cualquier otra función del robot.<br/>
+<br/>
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="conexion"><h2>CONECTAR ROBOT</h2></a>
+BTControl permite controlar robots emparejados mediante Bluetooth.<br/>
+La opción "<i>Conexiones</i>" del menú de configuración muestra el control de bluetooth de su dispositivo, que permite emparejar dispositivos.<br/>
+Los dispositivos emparejados aparecen en el menú de BTControl, para que seleccione cómodamente el que desea utilizar.<br/>
+<br/>
+También puede activar en la configuración la opción "Auto-Conectar" que intenta conectar automáticamente con el último dispositivo con el que se conectó.<br/>
+<br/>
+Si conecta automáticamente a un dispositivo y quiere conectar con otro diferente, deshabilite la opción "Auto-Conectar".<br/>
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="problemas"><h2>SOLUCIÓN DE PROBLEMAS</h2></a>
+<h3>El dispositivo que quiero utilizar no aparece en el menú</h3>
+Utilice la configuración de Bluetooth para emparejar el dispositivo. Si sigue sin aparecer pruebe a reiniciar el programa.<br/>
+<br/>
+<h3>El dispositivo no conecta correctamente</h3>
+<h3>Ocurren errores al enviar las señales</h3>
+Pruebe a:<br/>
+<ol><li>Desde la configuración de Bluetooth borre el dispositivo
+<li>Reinicie ambos dispositivos
+<li>Vuelva a emparejar el dispositivo</ol>
+<br/>
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="desarrolladores"><h2>DESARROLLADORES</h2></a>
+El robot debe disponer de un módulo Bluetooth operativo (<a href="http://guimi.net/blogs/hiparco/category/arduino/">ejemplos en mi web</a>).<br/>
+BTControl envía señales de un solo caracter que el robot debe interpretar al recibir.<br/>
+Las señales enviadas pueden modificarse en "Configuración", pero si no se modifica son las siguientes:<br/>
+<ul><li>Señales de Primo*:<ul>
+		<li>Delante (Rojo): V
+		<li>Izquierda (Azul): W
+		<li>Derecha (Amarillo): Y</ul>
+	<li>Señales tipo Primo (desde el mando):<ul>
+		<li>Stop (Verde): X 
+		<li>Detrás (Rojo): Z</ul>
+	<li>Señales de mando de control:<ul>
+		<li>Números del 1 al 9, siendo el 1 delante-izquierda, 2 delante, ... 5 parado, ... 9 atrás-derecha</ul>
+	<li>Botones de función:<ul>
+		<li>Botones de A a J envían el caracter indicado</ul>
+</ul>
+<br/>
+[*] En el modo Primo, al pulsar el botón rojo (ejecutar), BTControl compone el mensaje programado y le añade un '0' al final.<br/>
+<br/>
+Puede recuperar los datos originales desde el menú de configuración, pulsando la tecla menú y seleccionando "Carga preferencias originales".<br/>
+<br/>
+<a name="template"><h3>Plantilla de código Arduino</h3></a>
+<a href="http://guimi.net/imgs/blog/hiparco/btcontrol/BTControl.ino">Descargar código</a></br>
+
+<a href="#menu">Ir al índice</a>
+
+<hr width="50%">
+<a name="creditos"><h2>CRÉDITOS</h2></a>
+<a href="http://guimi.net"><img src="file:///android_asset/guimi.png"></a><br/>
+BTControl realizado por <a href="http://guimi.net">Güimi</a><br/>
+&nbsp;<br/>
+Imagen de fondo (<a href="http://www.publicdomainpictures.net/view-image.php?image=26031&picture=light-wood-texture">light_wood_texture</a>) de Petr Kratochvil.<br/>
+&nbsp;<br/>
+<a href="www.primo.io">Primo</a> realizado por <a href="http://solidlabs.co/">Solid Labs</a><br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+<a href="#menu">Ir al índice</a>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+
